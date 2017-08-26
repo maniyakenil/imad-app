@@ -7,7 +7,14 @@ element.innerHTML=('New value');
 
  //move the image
  var element = document.getElementById('madi');
+ var marginleft = 0;
+ function moveRight() {
+     marginleft = marginleft + 10;
+     img.style.marginLeft = marginLeft + 'px';
+     
+ }
  img.onclick = function () {
-     img.style.marginleft = '100px';
+     var interval = setInterval(moveRight, 100);
+     
  };
  
